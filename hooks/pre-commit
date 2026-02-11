@@ -1,0 +1,10 @@
+#!/bin/bash
+# Prevent commit unless README.md is staged (updated)
+
+if ! git diff --cached --name-only | grep -q '^README\.md$'; then
+  echo "ERROR: You must update and stage README.md before committing."
+  echo "Tip: edit README.md, then run: git add README.md"
+  exit 1
+fi
+
+exit 0

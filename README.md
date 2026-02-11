@@ -53,3 +53,5 @@ These bonus questions are designed to test advanced Git and GitHub skills. Attem
 3. Implement a pre-commit hook that prevents commits if the `README.md` file is not updated. Provide the bash script for the hook and describe how to set it up. (This one is quite challenging.)
 
 Best of luck!
+
+Pre-commit hook bonus: blocks commits unless README.md is staged.
